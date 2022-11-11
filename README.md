@@ -1,8 +1,16 @@
 # LearningRust
 This is a simple guessing game CLI built with Rust.  
   
-  
-
-# Installation
+# Build
 cd into guess folder using ```cd guess```  
-Install and run using ```cargo run```
+Build using ```cargo build```
+
+# Run
+cd into guess folder using ```cd guess```  
+Run using ```cargo run```
+
+# Use Executables (For Windows)
+Go into ```guess/src/target/debug``` folder and run ```guess.exe```  
+
+# Use Executables (For Mac/Linux)
+Go into ```guess/src/target/debug``` folder and run ```guess.pdb```
