@@ -7,7 +7,7 @@ use std::{cmp::Ordering, io};
  * @params {i32} tries - number of tries
  */
 
-fn run_guess_game(secret_number: u32, mut tries: i32) {
+fn start_game(secret_number: u32, mut tries: i32) {
     println!("Guess the number!");
 
     loop {
@@ -75,11 +75,11 @@ fn main() {
         match &command.trim().to_lowercase() as &str {
             "n" => {
                 // start new guessing game
-                run_guess_game(secret_number, tries)
+                start_game(secret_number, tries)
             },
             "c" => {
                 // continue playing guessing game
-                run_guess_game(secret_number, tries)
+                start_game(secret_number, tries)
             },
             "q" => {
                 // quit guessing game
