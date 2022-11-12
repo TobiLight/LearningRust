@@ -34,20 +34,20 @@ fn run_guess_game(secret_number: u32, mut tries: i32) {
                 println!("Too Small!");
                 tries = tries - 1;
                 if tries == 0 {
-                    println!("You are out of tries!\nPress C to continue playing or Q to Quit game.");
+                    println!("You are out of tries!\nPress\n N to continue playing\n Q to Quit game.");
                     break;
                 }
             }
             Ordering::Equal => {
                 println!("You Win! {} is the correct guess.", guess);
-                println!("Press C to continue playing or Q to Quit game.");
+                println!("Press\n N to continue playing\n Q to Quit game.");
                 break;
             }
             Ordering::Greater => {
                 println!("Too Big!");
                 tries = tries - 1;
                 if tries == 0 {
-                    println!("You are out of tries!\nPress C to continue playing or Q to Quit game.");
+                    println!("You are out of tries!\nPress\n N to continue playing\n Q to Quit game.");
                     break;
                 }
             }
@@ -60,7 +60,7 @@ fn run_guess_game(secret_number: u32, mut tries: i32) {
  */
 fn main() {
     println!("Welcome to Guess...");
-    println!("Press N to start New Game or Q to Quit game.");
+    println!("Press\n N to start New Game \n Q to Quit game.");
 
     let secret_number = rand::thread_rng().gen_range(1..=100);
     let tries = 3;
