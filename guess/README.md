@@ -1,4 +1,3 @@
-# LearningRust
 This is a simple guessing game CLI built with Rust.  
   
 # Build
