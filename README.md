@@ -5,4 +5,4 @@ Learning how to use Rust by building simple cli prograns.
 [Guess](https://github.com/TobiLight/LearningRust/tree/main/guess)  
 
 ## Mini Bank
-[Mini Bank]()
+[Mini Bank](https://github.com/TobiLight/LearningRust/tree/main/mini_bank)
